@@ -1,0 +1,119 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+    #about, #skills, #projects, #contact {
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+        height: 15vh;
+    }
+    #skills, .skills-details-container {
+        margin-top: 2rem;
+    }
+    #profile, .section-container {
+        display: block;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section_pic-container {
+        width: auto;
+        height: 30vw;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    #profile {
+        margin: 4rem 0;
+    }
+    #projects {
+        margin-bottom: 5rem;
+    }
+    .contact-info-upper-container {
+        flex-direction: column;
+    }
+    .contact-info-container {
+        margin: 1rem 5rem;
+    }
+    footer {
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #hamburger-nav {
+        height: 12vh;
+    }
+    .logo {
+        height: 3.5rem;
+    }
+    #contact, footer {
+        height: 40vh;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    #projects {
+        margin-bottom: 8rem;
+    }
+    .about-containers {
+        flex-direction: column;
+    }
+    .about-containers, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0.6rem;
+    }
+    .contact-info-container p, .nav-links li a {
+        font-size: 1rem;
+    }
+    .skills-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section_pic-container {
+        width: auto;
+        height: 40vw;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .section_text_p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
+}

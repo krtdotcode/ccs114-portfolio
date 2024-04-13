@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurt Joshua | 1CS-A</title>
+    <link rel="icon" href="assets/letter-k.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <img src="assets/letter-k.png" alt="letter-k" class="logo" onclick="location.href='#'">
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <img src="assets/letter-k.png" alt="letter-k" class="logo" onclick="location.href='#'">
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="assets/cayaga.jpg" alt="Cayaga">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello World, I'm</p>
+            <h1 class="title">Kurt Joshua</h1>
+            <p class="section_text_p2">Aspiring Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="location.href='./#about'">About Me</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="assets/facebook.png" alt="facebook" class="icon" onclick="location.href='https://www.facebook.com/kurtjosh.cayaga.16'">
+                <img src="assets/gmail.png" alt="email" class="icon" onclick="location.href='mailto:kurtcayagatash@gmail.com'">
+                <img src="assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/kurtjoshua'">
+                <img src="assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/kurtjoshuacayaga'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="assets/shs.png" alt="SHS" class="icon">
+                        <h3>High School</h3>
+                        <p>Science, Technology, Engineering, and Mathematics</p>
+                        <p>University of Cabuyao<br>2021 - 2023</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="assets/college.png" alt="College" class="icon">
+                        <h3>College</h3>
+                        <p>Bachelor of Science in Computer Science</p>
+                        <p>University of Cabuyao<br>2023 - Present</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Welcome to my portfolio!
+                        <br><br>
+                        I'm a Computer Science student at the University of Cabuyao. A passionate learner and currently exploring various frameworks and languages as I work towards my aspiration of becoming a Software Engineer.
+                        <br><br>
+                        Thank you for taking the time to visit my portfolio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <p class="section_text_p1">Witness My</p>
+        <h1 class="title">Skills</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Web Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/html.png" alt="HTML" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/css.png" alt="CSS" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/bootstrap.png" alt="Bootstrap" class="icon">
+                            <div>
+                                <h3>Bootstrap</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/js.png" alt="JavaScript" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="skills-sub-title">Programming</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="assets/python.png" alt="Python" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="assets/java.png" alt="Java" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="skills-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/webapp.jpg" alt="Grade Calculator" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">Grade Calculator</h2>
+                    <div class="btn-container">
+                        <a href="webapp/home.html" target="_blank"><button class="btn btn-color-2 project-btn">View</button></a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/game.jpg" alt="Game" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">Rock-Paper-Scissor</h2>
+                    <div class="btn-container">
+                        <a href="game/rock-paper-scissor.html" target="_blank"><button class="btn btn-color-2 project-btn">View</button></a>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="assets/merch-site.JPG" alt="Merch Site" class="project-img">
+                    </div>
+                    <h2 class="skills-sub-title project-title">CCS Merch</h2>
+                    <div class="btn-container">
+                        <a href="https://kurtjoshua.github.io/ccs-merch/" target="_blank"><button class="btn btn-color-2 project-btn">View</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Info</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/facebook.png" alt="facebook" class="icon contact-icon">
+                <p><a href="https://www.facebook.com/kurtjosh.cayaga.16">Facebook</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/gmail.png" alt="email" class="icon contact-icon">
+                <p><a href="mailto:kurtcayagatash@gmail.com">Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/github.png" alt="github" class="icon contact-icon">
+                <p><a href="https://github.com/kurtjoshua">GitHub</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" alt="github" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/kurtjoshuacayaga">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>&#169; Kurt Joshua | 1CS-A</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
