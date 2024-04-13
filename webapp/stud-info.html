@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator @ PnC</title>
+  <link rel="icon" type="image/x-icon" href="pnc-shs-logo.png" />
+  <link rel="stylesheet" type="text/css" href="stud-info.css">
+</head>
+<body>
+  <header>
+    <div class="main">
+      <div class="logo">
+        <a href="home.html">
+          <img src="pnc-shs-logo.png" alt="Logo of University of Cabuyao">
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="home.html" class="nav-home">HOME</a>
+        </li>
+        <li>
+          <a href="stud-info.html" class="nav-calc">CALCULATE</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="form-container">
+    <br>
+    <div class="form-title">
+      <h1>STUDENT INFORMATION</h1>
+    </div>
+    <br>
+    <div class="form-fn">
+      <input type="text" class="fn" placeholder="FIRST NAME">
+    </div>
+    <br>
+    <div class="form-mn">
+      <input type="text" class="mn" placeholder="MIDDLE NAME">
+    </div>
+    <br>
+    <div class="form-sn">
+      <input type="text" class="sn" placeholder="SURNAME">
+    </div>
+    <br>
+    <div class="form-sctn">
+      <select class="sctn">
+        <option selected style="color: black" value="">SECTION</option>
+        <optgroup label="Grade 12" style="color: black">
+          <option style="color: black" value="12ESTEM-E1">12ESTEM-E1</option>
+          <option style="color: black" value="12ESTEM-E2">12ESTEM-E2</option>
+          <option style="color: black" value="12ESTEM-E3">12ESTEM-E3</option>
+          <option style="color: black" value="12ESTEM-E4">12ESTEM-E4</option>
+          <option style="color: black" value="12ESTEM-E5">12ESTEM-E5</option>
+          <option style="color: black" value="12ESTEM-E6">12ESTEM-E6</option>
+          <option style="color: black" value="12ESTEM-E7">12ESTEM-E7</option>
+          <option style="color: black" value="12ESTEM-E8">12ESTEM-E8</option>
+          <option style="color: black" value="12ESTEM-E9">12ESTEM-E9</option>
+          <option style="color: black" value="12ESTEM-E10">12ESTEM-E10</option>
+          <option style="color: black" value="12ESTEM-E11">12ESTEM-E11</option>
+          <option style="color: black" value="12ESTEM-E12">12ESTEM-E12</option>
+          <option style="color: black" value="12ESTEM-E13">12ESTEM-E13</option>
+          <option style="color: black" value="12ESTEM-E14">12ESTEM-E14</option>
+        </optgroup>
+        </select>
+      <input type="text" class="studno" placeholder="STUDENT ID NO.">
+    </div>
+    <br>
+    <div class="form-consent">
+      <p class="consent"><span><input type="checkbox" class="checkbox"></span>      I agree to the terms and conditions as set out by the user agreement.</p>
+    </div>
+    <br>
+    <div class="nxt-but">
+      <p> </p>
+      <a class="nxt" href="calculator.html" onclick="next()">NEXT</a>
+      <p> </p>
+    </div>
+    <br>
+  </div>
+  <script type="text/javascript">
+    function next(){
+      var firstname = document.getElementsByClassName("fn")[0].value;
+      var middlename = document.getElementsByClassName("mn")[0].value;
+      var surname = document.getElementsByClassName("sn")[0].value;
+
+      var fullname = surname + ", " + firstname + " " + middlename;
+      var section = document.getElementsByClassName("sctn")[0].value;
+      var id_no = document.getElementsByClassName("studno")[0].value;
+
+      localStorage.setItem("Student_Name", fullname);
+      localStorage.setItem("Student_Section", section);
+      localStorage.setItem("Student_id_no", parseInt(id_no));
+    }
+  </script>
+</body>
+</html>

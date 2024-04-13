@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator @ PnC</title>
+  <link rel="icon" type="images/x-icon" href="pnc-shs-logo.png" />
+  <link rel="stylesheet" type="text/css" href="result.css">
+</head>
+<body>
+  <header>
+    <div class="main">
+      <div class="logo">
+        <a href="home.html">
+          <img src="pnc-shs-logo.png" alt="Logo of University of Cabuyao">
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="home.html" class="nav-home">HOME</a>
+        </li>
+        <li>
+          <a href="stud-info.html" class="nav-calc">CALCULATE</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="form-container">
+    <br>
+    <div class="title">
+      <h1>RESULTS</h1>
+      <br>
+      <h2>STUDENT INFORMATION</h2>
+    </div>
+    <br>
+    <div class="res-stud-info">
+      <h4>STUDENT NAME</h4>
+      <p><span class="res-nm"></span></p>
+      <br>
+      <h4>STUDENT ID NO.</h4>
+      <p><span class="res-studno"></span></p>
+      <br>
+      <h4>GRADE & SECTION</h4>
+      <p><span class="res-grdsec"></span></p>
+      <br>
+    </div>
+    <br>
+    <div class="res-calc">
+      <h2>CALCULATION</h2>
+    </div>
+    <br>
+    <div class="res-stud-calc">
+      <h4>TOTAL OF GRADES</h4>
+      <p><span class="res-tog"></span></p>
+      <br>
+      <h4>GENERAL AVERAGE</h4>
+      <p><span class="res-ga"></span></p>
+      <br>
+      <h4>REMARKS</h4>
+      <p><span class="res-rem"></span></p>
+      <br>
+    </div>
+    <br>
+    <div class="homepg-but">
+      <p> </p>
+      <a class="homepg" href="home.html">BACK TO HOME PAGE</a>
+      <p> </p>
+    </div>
+    <br>
+  </div>
+  <script type="text/javascript">
+    document.getElementsByClassName("res-nm")[0].innerHTML = localStorage.getItem("Student_Name");
+    document.getElementsByClassName("res-studno")[0].innerHTML = localStorage.getItem("Student_id_no");
+    document.getElementsByClassName("res-grdsec")[0].innerHTML = localStorage.getItem("Student_Section");
+
+    document.getElementsByClassName("res-tog")[0].innerHTML = localStorage.getItem("Total");
+    document.getElementsByClassName("res-ga")[0].innerHTML = localStorage.getItem("Average");
+    document.getElementsByClassName("res-rem")[0].innerHTML = localStorage.getItem("Remarks");
+  </script>
+</body>
+</html>

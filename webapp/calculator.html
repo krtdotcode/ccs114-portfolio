@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator @ PnC</title>
+  <link rel="icon" type="image/x-icon" href="pnc-shs-logo.png" />
+  <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+  <header>
+    <div class="main">
+      <div class="logo">
+        <a href="home.html">
+          <img src="pnc-shs-logo.png" alt="Logo of University of Cabuyao">
+        </a>
+      </div>
+      <ul>
+        <li>
+          <a href="home.html" class="nav-home">HOME</a>
+        </li>
+        <li>
+          <a href="stud-info.html" class="nav-calc">CALCULATE</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="form-container">
+    <br>
+    <div class="form-title">
+      <h1>GRADE CALCULATOR</h1>
+    </div>
+    <div class="form-subj">
+      <br>
+      <div class="form-df2">
+        <input type="text" class="df2" maxlength="3" placeholder="DRAFTING 2">
+      </div>
+      <br>
+      <div class="form-entrep">
+        <input type="text" class="entrep" maxlength="3" placeholder="ENTREPRENEURSHIP">
+      </div>
+      <br>
+      <div class="form-gb2">
+        <input type="text" class="gb2" maxlength="3" placeholder="GENERAL BIOLOGY 2">
+      </div>
+      <br>
+      <div class="form-gc2">
+        <input type="text" class="gc2" maxlength="3" placeholder="GENERAL CHEMISTRY 2">
+      </div>
+      <br>
+      <div class="form-gp2">
+        <input type="text" class="gp2" maxlength="3" placeholder="GENERAL PHYSICS 2">
+      </div>
+      <br>
+      <div class="form-pe4">
+        <input type="text" class="pe4" maxlength="3" placeholder="PHYSICAL EDUCATION 4">
+      </div>
+      <br>
+      <div class="form-ridl2">
+        <input type="text" class="ridl2" maxlength="3" placeholder="RESEARCH IN DAILY LIFE 2">
+      </div>
+      <br>
+      <div class="form-rp">
+        <input type="text" class="rp" maxlength="3" placeholder="RESEARCH PROJECT">
+      </div>
+      <br>
+      <div class="form-wi">
+        <input type="text" class="wi" maxlength="3" placeholder="WORK IMMERSION">
+      </div>
+      <br>
+      <div class="calc-but">
+        <p> </p>
+        <a class="calc" href="result.html" onclick="calculate()">CALCULATE</a>
+        <p> </p>
+      </div>
+      <br>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function calculate(){
+      var df2 = document.getElementsByClassName("df2")[0].value;
+      var entrep = document.getElementsByClassName("entrep")[0].value;
+      var gb2 = document.getElementsByClassName("gb2")[0].value;
+      var gc2 = document.getElementsByClassName("gc2")[0].value;
+      var gp2 = document.getElementsByClassName("gp2")[0].value;
+      var pe4 = document.getElementsByClassName("pe4")[0].value;
+      var ridl2 = document.getElementsByClassName("ridl2")[0].value;
+      var rp = document.getElementsByClassName("rp")[0].value;
+      var wi = document.getElementsByClassName("wi")[0].value;
+
+      var total = parseInt(df2) + parseInt(entrep) + parseInt(gb2) + parseInt(gc2) + parseInt(gp2) + parseInt(pe4) + parseInt(ridl2) + parseInt(rp) + parseInt(wi);
+      var average = parseFloat(total)/9;
+
+      localStorage.setItem("Total", total);
+      localStorage.setItem("Average", average.toFixed(2));
+
+      if(average >= 90){
+        localStorage.setItem("Remarks", "OUTSTANDING (PASSED)");
+      }
+      else if(average >= 85){
+        localStorage.setItem("Remarks", "VERY SATISFACTORY (PASSED)");
+      }
+      else if(average >= 80){
+        localStorage.setItem("Remarks", "SATISFACTORY (PASSED)");
+      }
+      else if(average >= 75){
+        localStorage.setItem("Remarks", "FAIRLY SATISFACTORY (PASSED)");
+      }
+      else if(average < 75){
+        localStorage.setItem("Remarks", "DID NOT MEET EXPECTATIONS (FAILED)");
+      }
+    }
+  </script>
+</body>
+</html>
