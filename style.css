@@ -255,6 +255,7 @@ section {
 #about {
     position: relative;
     background-color: #f8f9fa;
+    border-radius: 1rem;
 }
 
 .about-containers {
@@ -333,6 +334,7 @@ article .icon {
 #projects {
     position: relative;
     background-color: #f8f9fa;
+    border-radius: 1rem;
 }
 
 .color-container {
